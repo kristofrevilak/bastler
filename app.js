@@ -338,7 +338,7 @@ app.get("/edit",(req,res)=>{
 
 
 
-app.listen(1080, function(){
+app.listen(process.env.PORT || 1080, function(){
     console.log("Listening on port 1080!");
 });
 
