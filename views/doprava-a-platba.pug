@@ -1,0 +1,56 @@
+extends layout
+
+block content
+	.ine
+		section.medium-header
+			h2 Platba
+		article.multiParagraph-section
+			//- section.small-header
+			//- 		h2 PC Na Mieru
+			section.doubleContent-section
+				p 
+				| Pre 
+				span PC Na Mieru 
+				| je platba možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. Možnosti platby za zostavy sú následovné:
+				ul
+					li Bankový prevod na účet firmy
+					li Vklad na účet firmy (možnosť aj osobného stretnutia)
+
+		article.multiParagraph-section
+			//- section.small-header
+			//- 		h2 Služby a servis
+			section.doubleContent-section
+					p 
+					| Na ostatne 
+					span Služby a servis
+					|  je možná len vopred, okrem prípadov kedy sa dá uplatniť dobierka, napr. Delid CPU. Možnosti platby za zostavy sú následovné:
+					ul
+						li Bankový prevod na účet firmy
+						li Vklad na účet firmy (možnosť aj osobného stretnutia)
+						li Dobierka
+
+	.table
+		section.medium-header
+			h2 Doprava
+		table.table-section
+			tr
+				th Spôsob dopravy:
+				th Cena:
+			tr
+				td Osobný odber v sídle firmy
+				td.right Zdarma
+			tr
+				td Osobný dovoz zo strany firmy:
+				td.right Pre SC a BA Zdarma, ostatné dohodou
+			tr
+				td Kuriér
+				td.right od 5€ - cena závisí od hmotnosti
+		#xdxd
+			p Pri objednávke nad 2000€ doprava zdarma.
+
+	section.whats-next
+		.whats-next-wrapper
+			.whats-next-header
+				h2 Pozrite naspat:
+			.whats-next-content
+				p.next-click delid cpu

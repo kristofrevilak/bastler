@@ -1,0 +1,69 @@
+extends layout
+block content
+  form(method="POST" action="/edit")
+    input(type="hidden", name="_method" value="PUT")
+    each value in mainPage
+      if value.css == "review-section"
+        section.main-page-review-section
+          section.main-page-review-section-div
+            header.main-page-review-section-header
+              label.input-label Section Header:
+              input(class="input-header" value=value.name name="section_header")
+              input(class="input-header" name="section_id" value=value._id type="hidden")
+              input(class="input-header" name="section_css" value=value.css)
+            each review in value.content.reviews
+              article.main-page-review-section-body
+                img.main-page-review-profile-photo(src=review.img, alt='PROFILE PHOTO')
+                .main-page-review-section-body-header
+                  label.input-label  Name:
+                  input(class="input-header" name="review_header" value=review.name)
+                .main-page-review-section-body-stars
+                  label.input-label  Review:
+                  textarea(class="textarea-s" name="review_text")=review.text
+                  label.input-label  Profile Image:
+                  input(class="input-header" name="review_img" value=review.img)
+                  label.input-label  Stars:
+                  input(class="input-header" name="review_stars" value=review.stars)
+      else
+        section(class="main-page-" + value.css style="background-image:url('"+value.content.img+"');background-position: center;background-size: cover;background-attachment: scroll;")
+          section(class="main-page-" +value.css+"-content")
+            // main section header
+            header(class="main-page-" +value.css+"-header")
+              input(class="input-header" name="section_header" value=value.name)
+            // main section text
+            input(class="input-header" name="section_css" value=value.css)
+            br
+            input(class="input-header" name="section_img" value=value.content.img)
+            br
+            textarea(class="textarea-l" name="section_text")=value.content.desc
+            br
+            if value.content.button.type
+              input(type="checkbox" name="section_button_exists" checked)
+            else
+              input(type="checkbox" name="section_button_exists")
+            input(class="input-header" name="section_button_type" value=value.content.button.type)
+            input(class="input-header" name="section_button_link" value=value.content.button.link)
+            br
+            input(class="input-header" name="section_id" value=value._id type="hidden")
+    button(type="submit") Submit
+  form(method="POST" action="/edit")
+    input(type="hidden", name="_method" value="DELETE")
+    each value in mainPage
+      h4=value.name
+    label.input-label Type what section to delete
+    input(class="input-header" name="item_to_delete")
+    button(type="submit") Delete Section
+  select(name="page_type" id="select_page_type" onchange="populate(this.id,'new_section')")
+    option(value="")
+    option(value="main_section") Main Section
+    option(value="side_section") Side Section
+    option(value="review_section") Review Section
+    //- option(value="doubleHeader_section") Double Header Section
+    //- option(value="doubleContent_section") Double Content Section
+    //- option(value="media_section") Media Section
+    //- option(value="tripleItem-section") Triple Item Section
+    //- option(value="table_section") Table Section
+    //- option(value="multiParagraph_section") Multi Paragraph Section
+    //- option(value="header_section") Header Section
+    //- option(value="paragraph_section") Paragraph Section
+  div#new_section

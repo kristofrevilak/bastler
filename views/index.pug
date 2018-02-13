@@ -1,0 +1,91 @@
+extends layout
+
+block content 
+  // main section
+  section(class="main-section" style="background-image:url('https://static.pexels.com/photos/380769/pexels-photo-380769.jpeg');background-position: center;background-size: cover;background-attachment: scroll;")
+    section(class="main-section-content")
+      header(class="main-section-header")
+        h1.highlight PC Bastler
+      section(class="main-section-content-text")
+        span(class="main-section-desc highlight") Zložíme PC presne podľa Vašich potrieb a očakávaní. Skúsenosti a kvalita za tu najvýhodnejšiu cenu.
+      .see-more(onclick="clickedButton('see-more')")
+        span.arrow-text Prečo práve my?
+        br
+        i(class="fa fa-arrow" aria-hidden='true')
+
+  .divider
+  
+  section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
+    section(class="side-section-content")
+      section(class="side-section-float")
+        header(class="side-section-header")
+          h1 PC zostavy na mieru
+        section(class="side-section-content-text")
+          span(class="side-section-desc") Každý potrebuje PC na to svoje. Vašnivý hráč, ktorý si chce vychutnať tie najlepšie detaily? Práca v kancelárii, Microsoft Office, tlač dokumentov? Dizajn, grafika, strih videa či úprava hudby? Zložíme PC presne podľa Vašich potrieb a očakávaní!
+      section(class="side-section-img")
+        img(src="https://static.pexels.com/photos/776656/pexels-photo-776656.jpeg" class="normal" alt="section-photo")
+
+  .divider
+
+  section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
+    section(class="side-section-content")
+      section(class="side-section-float left")
+        header(class="side-section-header")
+          h1 Servis a poradenstvo
+        section(class="side-section-content-text")
+          span(class="side-section-desc") Pomalý a prehrievajúci sa PC, či nefunkčný displej na notebooku? Zavírený počítač či množstvo nepotrebných programov? Inštalácia operačného systému alebo potrebujete pomôcť s prvým spustením počítača? Ochotne Vám pomôžeme!
+      section(class="side-section-img")
+        img(src="https://static.pexels.com/photos/257736/pexels-photo-257736.jpeg" class="normal" alt="section-photo")
+  
+  .divider
+
+  section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
+    section(class="side-section-content")
+      section(class="side-section-float")
+        header(class="side-section-header")
+          h1 Delid CPU
+        section(class="side-section-content-text")
+          span(class="side-section-desc") Delid je slúži hlavne na zníženie teplôt, ktoré môžu vo výsledku byť až o 20°C nižšie! Svoje uplatnenie má hlavne pri taktovaní a pre dosiahnutie tichšieho chodu PC. Pri objednávke PC na mieru s procesorom Intel rady "K" dostanete 20% zľavu na delid "Profi".
+          .see-more(onclick="clickedButton('see-more')")
+            span.arrow-text Klikni pre viac info
+      section(class="side-section-img")
+        img(src="https://static.pexels.com/photos/159282/technology-servers-server-159282.jpeg" class="normal" alt="section-photo")
+
+  .divider
+
+  section.review-section
+    section.review-section-div
+      header.review-section-header
+        h2   Recenzie
+      .review-section-wrapper
+        article.review-section-body#bender
+          img.review-profile-photo(src="https://temptec.webnode.sk/_files/200000034-9871e996c2/200/19275170_1215204021940025_8500336787225476774_n.jpg", alt='PROFILE PHOTO')
+          .review-section-body-header
+            h4 Bender Blahovsky
+          .review-section-body-stars
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+          span Maximálna spokojnosť
+        article.review-section-body#luky
+          img.review-profile-photo(src="https://temptec.webnode.sk/_files/200000035-1b2541c1fe/200/19702074_1814144758914588_8940003566711964845_n.jpg", alt='PROFILE PHOTO')
+          .review-section-body-header
+            h4 Lukáš Elner
+          .review-section-body-stars
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+            i.fa.fa-star(aria-hidden='true')
+          span Super dohoda, prijemný pán, 100% doporučuji.
+
+  section.whats-next
+    .whats-next-wrapper
+      .whats-next-header
+        h2 Pozrite dalej:
+      .whats-next-content
+        p.next-click pc na mieru
+  p
+  

@@ -1,0 +1,149 @@
+extends layout
+
+block content 
+
+
+  section.doubleHeader-section
+    section.doubleHeader-section-content
+      header.doubleHeader-section-header
+        h1 3 Jednoduché kroky
+        h4 Ku Vášmu vysnenému PC
+      .see-more(onclick="clickedButton('see-more')")
+        span.arrow-text Pozrieť
+        br
+        i(class="fa fa-arrow" aria-hidden='true')
+
+  section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
+    section(class="side-section-content")
+      section(class="side-section-float")
+        header(class="side-section-header")
+          h1 Požiadavka zákazníka a návrh zostavy
+        section(class="side-section-content-text")
+          span(class="side-section-desc") Vaše požiadavky radi prediskutujeme telefonicky, prostredníctvom e-mailu či Facebooku. Taktiež osobne v našej kancelárii alebo po dohode kdekoľvek v okrese Senec a Bratislava. Po vytvorení návrhu zostavy Vám ho predložíme na schválenie.
+      section(class="side-section-img")
+        img(src="" class="normal" alt="section-photo")
+
+  section.review-section
+    section.review-section-div
+      header.review-section-header
+        h2 Prečo práve my?
+      .review-section-wrapper
+        article.review-section-body
+          img.review-profile-photo(src="", alt='PROFILE PHOTO')
+          span Naše zostavy skladáme tak, aby dosiahli vysoký výkon a zároveň najvyššiu kvalitu za Vaše peniaze.
+        article.review-section-body
+          img.review-profile-photo(src="", alt='PROFILE PHOTO')
+          span Zostavy vždy pred odovdzaním riadne preverujeme a testujeme.
+        article.review-section-body
+          img.review-profile-photo(src="", alt='PROFILE PHOTO')
+          span Vzdelávame sa, sledujeme trendy a trh aby sme Vám vždy to najlepšie čo PC svet ponúka.
+
+  section.doubleContent-section(style='background-image:url()')
+    section.doubleContent-section-header
+      h1 Dodatočné služby
+    article.doubleContent-section-clear
+      article.doubleContent-section-divider
+        article.doubleContent-section-content.float
+          h3 Pretaktovanie a odladenie
+          p Ak is zákazník želá, vybrané komponenty pretaktujeme na najvyšší možný výkon pri zachovaní nízkych teplôt a efektivity zostavy. Následne pretaktovanie testujeme dôslednými záťažovými testami. Samozrejmosťou je nastavenie otáčok ventilátorov, tak aby dosiahli čo nízku hlučnosť.
+        article.doubleContent-section-content-img
+          img
+        article.doubleContent-section-content
+          h3 Delid CPU
+          p V prípade, že v zostave máte procesor rady 'K' od Intelu (napr. Intel Core i7-6700K), dostanete zľavu 30% na delid 'Profi'. Viac info tu: Delid CPU
+        article.doubleContent-section-content-img
+          img
+
+  section.media-section
+    article.media-section-content
+      // <img src="http://files.temptec.webnode.sk/200000009-347ab3574b/200/20248485_1824700131177391_8878334669112166266_o.jpg" alt="SERVIS PC" />
+      header.media-section-header
+        h1 Ukážka stavby
+      iframe(src="" allowfullscreen="1")
+
+  section.medium-header
+    h2 Ponuka
+  table.table-section
+      tr
+        th Delid
+        th Basic
+        th Profi
+      tr
+        td Odstránenie IHS od PCB
+        td Áno
+        td Áno
+      tr
+        td Vyčistenie Isopropyl alkoholom
+        td Áno
+        td Áno
+      tr
+        td Aplikácia Thermal Grizzly Conductonaut
+        td Nie
+        td Áno
+      tr
+        td Lepenie IHS na PCB
+        td Nie
+        td Áno
+      tr
+        th Cena:
+        th 15€
+        th 35€
+
+  article.multiParagraph-section
+    section.small-header
+      h2 Delid ponúkame pre procesory so socketom:
+    section.doubleContent-section
+      p 1150 (Intel) - celý zoznam podporovaných procesorov (Haswell).
+      p 1155 (Intel) - celý zoznam podporovaných procesorov (Sandy Bridge a Ivy Bridge).
+      p 1151 (Intel) - celý zoznam podporovaných procesorov (Skylake, Kaby Lake a Coffee Lake).
+    section.small-header
+      h2 Upozornenie
+    section.doubleContent-section
+      p Delid 'Basic' je možný len pre procesory so socketom 1150, 1155 a 1151. Delid 'Profi' je možný len pre procesory so socketom 1150 a 1151.
+      p Procesor, ktorý prejde delidom 'Basic' nie je funkčný a je potrebné ho ešte následne zlepiť! Tento úkon si vyžaduje odbornú manipuláciu s procesorom!
+      p Úkonom odstránenia IHS sa stráca záruka na CPU tzn. nie je možné ho reklamovať . Každé CPU, ktorému sa odstráni IHS je testované na funkčnosť..
+      p V prípade, že CPU poškodíme a znefunkčníme, zákazníkovi dodávame nové.
+    
+
+
+
+
+    section.medium-header
+      h2 Platba
+    
+    article.multiParagraph-section
+      section.small-header
+          h2 PC Na Mieru
+      section.doubleContent-section
+          p Platba je možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. Možnosti platby za zostavy sú následovné:
+          p Bankový prevod na účet firmy
+          p Vklad na účet firmy (možnosť aj osobného stretnutia)
+
+    article.multiParagraph-section
+      section.small-header
+          h2 Služby a servis
+      section.doubleContent-section
+          p Platba je možná len vopred, okrem prípadov kedy sa dá uplatniť dobierka, napr. Delid CPU. Možnosti platby za zostavy sú následovné:          p Bankový prevod na účet firmy
+          p Bankový prevod na účet firmy
+          p Vklad na účet firmy (možnosť aj osobného stretnutia)
+          p Dobierka
+    
+    section.medium-header
+      h2 Doprava
+    table.table-section
+      tr
+        th Spôsob dopravy:
+        th Cena:
+      tr
+        td Osobný odber v sídle firmy
+        td Zdarma
+      tr
+        td Osobný dovoz zo strany firmy:
+        td Pre SC a BA Zdarma, ostatné dohodou
+      tr
+        td Kuriér
+        td od 5€ - cena závisí od hmotnosti
+
+    article.main-section-content
+      p Pri objednávke nad 2000€ doprava zdarma.
+      

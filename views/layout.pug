@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    // title
+    title PC Bastler | Predaj a servis PC techniky
+    // meta tags
+    meta(name='description', content='Zložíme PC presne podľa Vašich potrieb a očakávaní. Doprava zadarmo v BA a Senci.')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    // link tags
+    link(rel='stylesheet', href='/style.css', media='screen', title='no title' type="text/css")
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond', rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet")
+    // script tags
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js')
+    script(type='text/javascript', src='/main.js')
+    script(type='text/javascript', src='/edit-list.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js', charset='utf-8')
+  // nav bar
+  nav
+    ul
+      // logo
+      li.nav-logo
+        a(href='/')
+          img(src='logo.png', alt='PC Bastler')
+      // nav menu items
+      li.nav-item.normal
+        a.active(onclick="getFooter()") Kontakt
+      li.nav-item.normal
+        a.active(href="/doprava-a-platba") Doprava a Platba
+      li.nav-item.normal
+        a.active(href="/delid-cpu") Delid CPU
+      li.nav-item.normal
+        a.active(href="/pc-na-mieru") PC Na Mieru
+      // nav-item "menu" mobile-only
+      li#menu.nav-item.mobile
+        p.nav-item-text menu
+    // special nav page mobile-only
+    
+    .nav-menu-mobile.mobile
+      span.exit XXX
+      li.nav-menu-item
+        a.active(href="/doprava-a-platba") PC Na Mieru
+      li.nav-menu-item
+        a.active(href="/delid-cpu") Delid CPU
+      li.nav-menu-item
+        a.active(href="/pc-na-mieru") Doprava a Platba
+      li.nav-menu-item
+        a.active(onclick="getFooter()") Kontakt
+    
+    
+      li.nav-menu-item
+        if user
+          p=user.name
+      img(src='logo.png', alt='PC Bastler')
+body
+    block content
+    block foot
+        footer#foot
+          //- h2.footer-header Kde nás nájdete?
+          section.footer-map
+            iframe.footer-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.309475028372!2d17.476507715900787!3d48.18138845608711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b7d522c98e9b9%3A0x8b8b6709abac3602!2zSHJ1YsOhIEJvcsWhYSAxODIsIDkyNSAyMyBIcnViw6EgQm9yxaFh!5e0!3m2!1ssk!2ssk!4v1504255161884", allowfullscreen='')            
+          article.footer-article
+            .footer-row
+                h4 Temptec s.r.o
+                .footer-add
+                  p č.d. 182, Hrubá Borša, 925 23 Jelka
+                  p IČO: 47067021
+                  p DIČ: 2023746296
+                  p Nie sme platcami DPH
+                .footer-add
+                  h4  
+                  p Pondelok - piatok: 7:00 - 18:30
+                  p +421 911 753 646
+                  p pcbastlersk@gmail.com
+                  p http://facebook.com/PCBastlerSK/
+        //- p.signature
+        //-     | Kristof Revilak 
+        //- br            
+        //- span.copy © 2017
