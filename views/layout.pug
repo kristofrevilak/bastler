@@ -16,7 +16,7 @@ html
     // script tags
     script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js')
     script(type='text/javascript', src='/main.js')
-    script(type='text/javascript', src='/edit-list.js')
+    //- script(type='text/javascript', src='/edit-list.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js', charset='utf-8')
   // nav bar
   nav
@@ -24,7 +24,7 @@ html
       // logo
       li.nav-logo
         a(href='/')
-          img(src='logo.png', alt='PC Bastler')
+          img(src='logo.png', class="logo" alt='PC Bastler')
       // nav menu items
       li.nav-item.normal
         a.active(onclick="getFooter()") Kontakt
@@ -54,7 +54,7 @@ html
       li.nav-menu-item
         if user
           p=user.name
-      img(src='logo.png', alt='PC Bastler')
+      img(src='logo.png' class="logo" alt='PC Bastler')
 body
     block content
     block foot

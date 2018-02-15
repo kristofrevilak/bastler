@@ -1,14 +1,22 @@
 $(function(){
   $("#menu").click( function(){
+    $("body").css("overflow", "hidden");
     $(".nav-menu-mobile").fadeIn('slow', function() {});
   });
   $(".exit").click(function() {
+    $("body").css("overflow", "auto");
     $(".nav-menu-mobile").fadeOut('slow', function() {});
   });
   $(".exit").hover(function() {
-    $(".exit").animate({borderColor: 'white',color: 'white'},200,function(){});
+    $(".exit").animate({borderColor: 'blue',color: 'blue'},200,function(){});
   }, function() {
     $(".exit").animate({borderColor: 'black',color: 'black'},200,function(){});
+  });
+  $(".logo").hover(function() {
+    console.log("hover");
+    $(".logo").prop({src: "blue_logo.png"});
+  }, function() {
+    $(".logo").prop({src: "logo.png"});
   });
   // $(".see-more").click(function() {
   //   $('html, body').animate({
@@ -26,8 +34,12 @@ $(function(){
     $(".fa-bullseye").animate({width:"0px"},200,function(){});
   });
 
-  $(".next-click").click(()=>{
-    var a = $(".next-click").text().toString().split(" ").join("-");
+  $("#click1").click(()=>{
+    var a = $("#click1").text().toString().split(" ").join("-");
+    window.location.href = "/" + a;
+  });
+  $("#click2").click(()=>{
+    var a = $("#click2").text().toString().split(" ").join("-");
     window.location.href = "/" + a;
   });
 
