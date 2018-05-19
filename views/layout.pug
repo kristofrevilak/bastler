@@ -22,18 +22,19 @@ html
   nav
     ul
       // logo
-      li.nav-logo
-        a(href='/')
-          img(src='logo.png', class="logo" alt='PC Bastler')
       // nav menu items
-      li.nav-item.normal
-        a.active(onclick="getFooter()") Kontakt
-      li.nav-item.normal
-        a.active(href="/doprava-a-platba") Doprava a Platba
-      li.nav-item.normal
-        a.active(href="/delid-cpu") Delid CPU
-      li.nav-item.normal
-        a.active(href="/pc-na-mieru") PC Na Mieru
+      .nav-items
+        li.nav-item.normal
+          a.active(onclick="getFooter()") Kontakt
+        li.nav-item.normal
+          a.active(href="/doprava-a-platba") Doprava a Platba
+        li.nav-item.normal
+          a.active(href="/delid-cpu") Delid CPU
+        li.nav-item.normal
+          a.active(href="/pc-na-mieru") PC Na Mieru
+        li.nav-logo
+          a(href='/')
+            img(src='logo.png', class="logo" alt='PC Bastler')
       // nav-item "menu" mobile-only
       li#menu.nav-item.mobile
         p.nav-item-text menu
