@@ -35,12 +35,16 @@ $(function(){
   });
 
   $("#click1").click(()=>{
-    var a = $("#click1").text().toString().split(" ").join("-");
+    var a = $("#content1").text().toString().split(" ").join("-").toLowerCase();
     window.location.href = "/" + a;
   });
   $("#click2").click(()=>{
     var a = $("#click2").text().toString().split(" ").join("-");
     window.location.href = "/" + a;
+  });
+
+  $(document).ready((e)=>{
+    TweenMax.to("html", 1, {opacity:1, ease: Circ.easeIn});
   });
 
 });

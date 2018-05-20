@@ -13,9 +13,11 @@ html
     link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Cormorant+Garamond', rel='stylesheet')
     link(href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet")
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
     // script tags
     script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js')
     script(type='text/javascript', src='/main.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js")
     //- script(type='text/javascript', src='/edit-list.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js', charset='utf-8')
   // nav bar
@@ -62,11 +64,11 @@ body
         footer#foot
           //- h2.footer-header Kde nás nájdete?
           section.footer-map
-            iframe.footer-map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.309475028372!2d17.476507715900787!3d48.18138845608711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b7d522c98e9b9%3A0x8b8b6709abac3602!2zSHJ1YsOhIEJvcsWhYSAxODIsIDkyNSAyMyBIcnViw6EgQm9yxaFh!5e0!3m2!1ssk!2ssk!4v1504255161884", allowfullscreen='')            
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.309475028372!2d17.476507715900787!3d48.18138845608711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b7d522c98e9b9%3A0x8b8b6709abac3602!2zSHJ1YsOhIEJvcsWhYSAxODIsIDkyNSAyMyBIcnViw6EgQm9yxaFh!5e0!3m2!1ssk!2ssk!4v1504255161884", allowfullscreen='')            
           article.footer-article
             .footer-row
                 h4 Temptec s.r.o
-                .footer-add
+                .footer-add#aano
                   p č.d. 182, Hrubá Borša, 925 23 Jelka
                   p IČO: 47067021
                   p DIČ: 2023746296

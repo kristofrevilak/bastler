@@ -10,7 +10,7 @@ block content
       section(class="main-section-content-text")
         span(class="main-section-desc highlight") Zložíme PC presne podľa Vašich potrieb a očakávaní. Skúsenosti a kvalita za tu najvýhodnejšiu cenu.
       .see-more(onclick="clickedButton('see-more')")
-        span.arrow-text Prečo práve my?
+        span.arrow-text Naše služby uvidíte scrollovaním nižšie.
         br
         i(class="fa fa-arrow" aria-hidden='true')
   
@@ -50,38 +50,50 @@ block content
 
 
   section.review-section
-    section.review-section-div
-      header.review-section-header
-        h2   Recenzie
-      .review-section-wrapper
-        article.review-section-body#bender
-          img.review-profile-photo(src="https://temptec.webnode.sk/_files/200000034-9871e996c2/200/19275170_1215204021940025_8500336787225476774_n.jpg", alt='PROFILE PHOTO')
-          .review-section-body-header
-            h4 Bender Blahovsky
-          .review-section-body-stars
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-          span Maximálna spokojnosť
-        article.review-section-body#luky
-          img.review-profile-photo(src="https://temptec.webnode.sk/_files/200000035-1b2541c1fe/200/19702074_1814144758914588_8940003566711964845_n.jpg", alt='PROFILE PHOTO')
-          .review-section-body-header
-            h4 Lukáš Elner
-          .review-section-body-stars
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-            i.fa.fa-star(aria-hidden='true')
-          span Super dohoda, prijemný pán, 100% doporučuji.
-
-  section.whats-next
-    .whats-next-wrapper
-      .whats-next-header
-        h2 Pozrite dalej:
-      .whats-next-content
-        p.next-click#click1 pc na mieru
-  p
+    header.review-section-header
+      h2   Recenzie
+    .review-section-wrapper
+      article.review-section-body#bender
+        img.review-profile-photo(src="/svg/man2.svg", alt='PROFILE PHOTO')
+        .review-section-body-header
+          h4 Bender Bláhovský
+        .review-section-body-stars
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+        span Maximálna spokojnosť.
+      article.review-section-body#luky
+        img.review-profile-photo(src="/svg/man.svg", alt='PROFILE PHOTO')
+        .review-section-body-header
+          h4 Lukáš Elner
+        .review-section-body-stars
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+          i.fa.fa-star(aria-hidden='true')
+        span Super dohoda, prijemný pán, 100% doporučuji.
+  section.nexts
+    section.whats-next
+      .whats-next-wrapper
+        .whats-next-header
+          h2 Ďaľší článok
+        .whats-next-content
+          p.next-click#click1
+            span#content1 Pc Na Mieru
+            |  / Predstavíme Vám proces poskladania vášho vysnívaného PC v jednoduchých troch krokoch.
+    section.whats-prev
+      .whats-next-wrapper
+        .whats-next-header
+          h2 Ďaľšie akcie
+        .whats-next-content
+          p.next-click#click1
+            span Ísť nahor
+            |  ^^ 
+            br
+            br
+            br
+  div(style="clear:both;")
   
