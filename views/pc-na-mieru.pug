@@ -2,15 +2,16 @@ extends layout
 
 block content 
 
-
-  section.doubleHeader-section#one
-    section.doubleHeader-section-content
-      header.doubleHeader-section-header
-        h1 3 Jednoduché kroky
-        h4 Ku Vášmu vysnenému PC
+  section(class="main-section" style="")
+    section(class="main-section-content")
+      header(class="main-section-header")
+        h1.highlight 3 Jednoduché kroky ku Vášmu vysnívanému PC
+      section(class="main-section-content-text")
+        span(class="main-section-desc highlight") 1. Požiadavka zákazníka a návrh zostavy
+        span(class="main-section-desc highlight") 2. Realizácia Projektu
+        span(class="main-section-desc highlight") 3. Prvé spustenie a inštalácia
       .see-more(onclick="clickedButton('see-more')")
         span.arrow-text Pozrieť
-        br
         i(class="fa fa-arrow" aria-hidden='true')
 
   section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
@@ -21,7 +22,7 @@ block content
         section(class="side-section-content-text")
           span(class="side-section-desc") Vaše požiadavky radi prediskutujeme telefonicky, prostredníctvom e-mailu či Facebooku. Taktiež osobne v našej kancelárii alebo po dohode kdekoľvek v okrese Senec a Bratislava. Po vytvorení návrhu zostavy Vám ho predložíme na schválenie.
       section(class="side-section-img")
-        img(src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" class="normal" alt="section-photo")
+        img(src="" class="normal" alt="section-photo")
 
   section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
     section(class="side-section-content")
@@ -47,15 +48,18 @@ block content
     header.why-us-section-header
       h2 Prečo práve my?
     .why-us-section-wrapper
-      article.why-us-section-reason#oneone
-        i(class="stack")
+      article.why-us-section-reason#first
+        p.num A
         span Naše zostavy skladáme tak, aby dosiahli vysoký výkon a zároveň najvyššiu kvalitu za Vaše peniaze.
-      article.why-us-section-reason#twotwo
-        i(class="market")
-        span Zostavy vždy pred odovdzaním riadne preverujeme a testujeme.
-      article.why-us-section-reason#threethree
-        i(class="book")
+        i(class="far fa-money-bill-alt")
+      article.why-us-section-reason#second
+        p.num B
+        span Zostavy vždy pred odovdzaním riadne preverujeme a spolu testujú naši skúsení experti.
+        i(class="fas fa-vials")
+      article.why-us-section-reason#third
+        p.num C
         span Vzdelávame sa, sledujeme trendy a trh aby sme Vám vždy to najlepšie čo PC svet ponúka.
+        i(class="fas fa-book")
 
   section.doubleContent-section(style='background-image:url()')
     section.doubleContent-section-header
@@ -76,7 +80,6 @@ block content
     article.media-section-content
       video( controls)
         source(src="stavba.mp4" type="video/mp4")
-  .divider
 
   section.whats-next
     .whats-next-wrapper
@@ -84,12 +87,17 @@ block content
         h2 Ďaľší článok
       .whats-next-content
         p.next-click#click1 
-          span delid cpu
+          span#content1 Delid CPU
+          |  / Predstavíme Vám proces prepastovania vášho CPU pre zlepšené teploty a výkon.
   section.whats-prev
     .whats-next-wrapper
       .whats-next-header
         h2 Predošlý článok
       .whats-next-content
-        p.next-click#click2 
-          span index
+          p.next-click#click2
+            span Ísť nahor
+            |  ^^ 
+            br
+            br
+            br
   div(style="clear:both;")
