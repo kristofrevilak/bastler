@@ -724,6 +724,8 @@ li {
   }
   .num{
     position: relative;
+    font-size: 20px;
+    margin: 0;
     // left: 10%;
   }
   #first{
@@ -736,13 +738,15 @@ li {
     background: rgb(195, 195, 195);
   }
   .why-us-section-reason{
-    width: 200px;
+    width: 65%;
     display: block;
-    text-align: center;
-    font-size: calc(10px + .3vw);
+    text-align: left;
+    font-size: calc(12px + .5vw);
+    line-height: 25px;
     margin: 0 auto;
-    padding: 5% 10%;
+    padding: 5% 15%;
     overflow: hidden;
+    box-sizing: content-box;
     span{
       padding-top: 5px;
       display: block;
@@ -896,6 +900,16 @@ li {
     overflow: hidden;
     padding: 10px;
   }
+
+  @media only screen and (max-width: 600px){
+    .whats-next-wrapper{
+     
+      // padding-left: 10px;
+      width: 60%;
+      margin: 0 auto;
+      padding: 10% 0;
+    }
+  }
   
 }
 
@@ -904,6 +918,8 @@ li {
     background-color: rgb(255, 203, 206);
   }
 }
+
+
 
 .media-section{
   background-image: none;
@@ -1361,9 +1377,23 @@ footer {
 }
 
 @media only screen and (max-width: 600px){
+  .delid-ponukame{
+    padding: 5px;
+  }
   .delid-ponukame-container{
     float: none;
     width: 90%;
+    padding: 0;
+    p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .delid-ponukame-header{
+      position: unset;
+      text-align: center;
+      padding: 20px;
+      background: #d0d0ff;
+    }
   }
   .hiide{
     display: none;

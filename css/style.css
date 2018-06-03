@@ -727,6 +727,8 @@ li {
   }
   .num {
     position: relative;
+    font-size: 20px;
+    margin: 0;
   }
   #first {
     background: white;
@@ -738,13 +740,15 @@ li {
     background: #c3c3c3;
   }
   .why-us-section-reason {
-    width: 200px;
+    width: 65%;
     display: block;
-    text-align: center;
-    font-size: calc(10px + .3vw);
+    text-align: left;
+    font-size: calc(12px + .5vw);
+    line-height: 25px;
     margin: 0 auto;
-    padding: 5% 10%;
+    padding: 5% 15%;
     overflow: hidden;
+    box-sizing: content-box;
   }
   .why-us-section-reason span {
     padding-top: 5px;
@@ -903,6 +907,14 @@ li {
   display: block;
   overflow: hidden;
   padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .whats-next .whats-next-wrapper, .whats-prev .whats-next-wrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10% 0;
+  }
 }
 
 @media only screen and (min-width: 100px) {
@@ -1374,9 +1386,23 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .delid-ponukame {
+    padding: 5px;
+  }
   .delid-ponukame-container {
     float: none;
     width: 90%;
+    padding: 0;
+  }
+  .delid-ponukame-container p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .delid-ponukame-container .delid-ponukame-header {
+    position: unset;
+    text-align: center;
+    padding: 20px;
+    background: #d0d0ff;
   }
   .hiide {
     display: none;
