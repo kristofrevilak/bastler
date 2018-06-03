@@ -7,13 +7,17 @@ block content
     article.doubleContent-section-clear
       article.doubleContent-section-divider
         article.doubleContent-section-content.float
-          h3
-          p Delid CPU je manuálne odstránenie (odkrytovanie) tzv. IHS ( Integrated Heat Spreader), ktorý odvádza teplo do samotného CPU chladiča. Priamo na čip nanesie pasta na báze tekutého kovu, ktoré majú najlepšie výsledky (prípadne inú pastu, ktorú si zákazník vyberie). Následne pomocou špeciálneho lepidla upevníme IHS na PCB (PCB (printed‑circuit board) → karta procesora).        article.doubleContent-section-content-img
-          img
+          h3 Čo to je
+          .doubble
+            p Delid CPU je manuálne odstránenie (odkrytovanie) tzv. IHS ( Integrated Heat Spreader), ktorý odvádza teplo do samotného CPU chladiča. Priamo na čip nanesie pasta na báze tekutého kovu, ktoré majú najlepšie výsledky (prípadne inú pastu, ktorú si zákazník vyberie). Následne pomocou špeciálneho lepidla upevníme IHS na PCB (PCB (printed‑circuit board) → karta procesora).
+            .icon
+              <i class="fas fa-thermometer-empty"></i>
         article.doubleContent-section-content
-          h3 
-          p Pre dosiahnutie čo najlepších výsledkov používame produkty firmy Thermal Grizzly. Pod IHS priamo na čip aplikujeme teplovodivú pastu na báze tekutého kovu Thermal Grizzly Conductonaut pre jej vysokú tepelnú vodivosť. Na IHS aplikujeme teplovodivú pastu Thermal Grizzly Kryonaut.
-          img
+          h3 Thermal Grizzly
+          .doubble
+            p Pre dosiahnutie čo najlepších výsledkov používame produkty firmy Thermal Grizzly. Pod IHS priamo na čip aplikujeme teplovodivú pastu na báze tekutého kovu Thermal Grizzly Conductonaut pre jej vysokú tepelnú vodivosť. Na IHS aplikujeme teplovodivú pastu Thermal Grizzly Kryonaut.
+            .icon
+              <i class="fas fa-clipboard-check"></i>
 
   section.media-section
     article.media-section-content
@@ -70,11 +74,13 @@ block content
     article.delid-ponukame-container 
       section.delid-ponukame-header
         h2 Upozornenie
-      section.delid-ponukame-text
-        p Delid 'Basic' je možný len pre procesory so socketom 1150, 1155 a 1151. Delid 'Profi' je možný len pre procesory so socketom 1150 a 1151.
-        p Procesor, ktorý prejde delidom 'Basic' nie je funkčný a je potrebné ho ešte následne zlepiť! Tento úkon si vyžaduje odbornú manipuláciu s procesorom!
-        p Úkonom odstránenia IHS sa stráca záruka na CPU tzn. nie je možné ho reklamovať . Každé CPU, ktorému sa odstráni IHS je testované na funkčnosť..
-        p V prípade, že CPU poškodíme a znefunkčníme, zákazníkovi dodávame nové.
+      section.delid-ponukame-text#vacsi
+        .jedno
+          p Delid 'Basic' je možný len pre procesory so socketom 1150, 1155 a 1151. Delid 'Profi' je možný len pre procesory so socketom 1150 a 1151.
+          p Procesor, ktorý prejde delidom 'Basic' nie je funkčný a je potrebné ho ešte následne zlepiť! Tento úkon si vyžaduje odbornú manipuláciu s procesorom!
+        .jedno
+          p Úkonom odstránenia IHS sa stráca záruka na CPU tzn. nie je možné ho reklamovať . Každé CPU, ktorému sa odstráni IHS je testované na funkčnosť..
+          p V prípade, že CPU poškodíme a znefunkčníme, zákazníkovi dodávame nové.
 
   section.whats-next
     .whats-next-wrapper
@@ -82,14 +88,14 @@ block content
         h2 Ďaľší článok
       .whats-next-content
         p.next-click#click1 
-          span#content1 Doprava a Platba
-          |  / Predstavíme Vám možnosti dopravy a platby. Doprava pre Senec a okolie je zadarmo.
+          span#content1.noo Doprava a Platba
+          span.hiide / Predstavíme Vám možnosti dopravy a platby. Doprava pre Senec a okolie je zadarmo.
   section.whats-prev
     .whats-next-wrapper
       .whats-next-header
         h2 Predošlý článok
       .whats-next-content
         p.next-click#click2 
-          span#content1 PC Na Mieru
-          |  / Predstavíme Vám proces poskladania vášho vysnívaného PC v jednoduchých troch krokoch.
+          span#content1.noo PC Na Mieru
+          span.hiide / Predstavíme Vám proces poskladania vášho vysnívaného PC v jednoduchých troch krokoch.
   div(style="clear:both;")

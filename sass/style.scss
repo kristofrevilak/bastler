@@ -177,16 +177,16 @@ li {
   float: left;
  
   list-style-type: none;
-  padding: calc(20px);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 20px;
+  padding: calc(14px + 1vw);
+  padding-top: calc(14px + 1vw);
+  padding-bottom: calc(14px + 1vw);
+  padding-right: calc(12px + 1vw);
   cursor: pointer;
   font-size: calc(12px + .1vw);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &.mobile {
-    padding-right: 10px;
+    
   }
   &.normal{
     display: none;
@@ -239,10 +239,11 @@ li {
   position: absolute;
   z-index: 5;
   text-align: center;
-  padding: 100px 0;
+  padding: calc(170px + 5vw) 0;
   /*font-family: "helvetica";*/
   letter-spacing: 1px;
   display: none;
+  top: 0;
   img {
     width: 30%;
     margin-top: 20px;
@@ -254,7 +255,7 @@ li {
 
 .exit {
   position: absolute;
-  top: 60px;
+  top: 120px;
   font-size: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -268,9 +269,10 @@ li {
 
 .nav-menu-item {
   list-style-type: none;
-  padding: 2%;
-  font-size: 3vw;
+  font-size: calc(12px + .5vw);
   color: black;
+  display: block;
+  padding-bottom: 20px;
   a {
     color: black;
     text-decoration: none;
@@ -317,7 +319,6 @@ li {
   background-attachment: scroll;
   color: black;
   position: relative;
-  z-index: -1;
   
 }
 
@@ -400,6 +401,7 @@ li {
     width: 100%;
     float: none;
     clear: both;
+    position: relative;
     
     img{
       box-sizing: border-box;
@@ -479,10 +481,18 @@ li {
   @media only screen and (min-width: 800px)  {
     margin: 0 auto;
     width: 25%;
+    span{
+      font-size: calc(10px + .3vw);
+    }
   }
-  span{
-    font-size: calc(10px + .3vw);
+  @media only screen and (max-width: 800px)  {
+    width: 60%;
+    margin: 0 auto;
+    span{
+      font-size: calc(12px + .5vw);
+    }
   }
+  
 }
 
 .fa-star{
@@ -498,9 +508,9 @@ li {
 }
 
 .review-section-body-header{
-  font-size: calc(10px + .5vw);
-  @media only screen and (min-width: 800px)  {
-    
+  
+  @media only screen and (max-width: 800px)  {
+    font-size: calc(12px + .7vw);
   }
 }
 .review-section-body-stars{
@@ -530,6 +540,25 @@ li {
   padding: 2.5% 0;
   padding-left: 10%;
   background: rgb(145, 145, 255);
+  overflow: hidden;
+  .doubble{
+    p{
+      width: 80%;
+      float: right;
+      display: block;
+    }
+    .icon{
+      width:20%;
+      padding-top: 5%;
+      display: block;
+      float: right;
+      text-align: center;
+      i{
+        color: white;
+        font-size: calc(20px + 2vw);
+      }
+    }
+  }
 }
 
 /****************************/
@@ -548,10 +577,6 @@ li {
   }
 }
 
-.main-section{
-  z-index: -1;
-  position: relative;
-}
 
 .main-section-content{
   color: white;
@@ -711,7 +736,7 @@ li {
     background: rgb(195, 195, 195);
   }
   .why-us-section-reason{
-    width: 60%;
+    width: 200px;
     display: block;
     text-align: center;
     font-size: calc(10px + .3vw);
@@ -781,7 +806,7 @@ li {
     font-size: calc(12px + .5vw);
     line-height: calc(12px + .5vw + 10px);
     width: 50%;
-    padding-right: 10%;
+    // padding-right: 10%;
     text-align: left;
     // letter-spacing: 1.5px;
     font-weight: lighter;
@@ -813,73 +838,69 @@ li {
 
 .whats-next, .whats-prev{
   cursor: default;
-  @media only screen and (min-width: 800px){
+  overflow: hidden;
+  background-color: rgb(255, 158, 166);
+  // margin: 0 auto;
+  width: 50%;
+  float: right;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+
+  .whats-next-wrapper{
+    margin: 0 auto;
     overflow: hidden;
-    background-color: rgb(255, 158, 166);
-    // margin: 0 auto;
-    width: 50%;
-    float: right;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
+    padding: 10% 0;
+    padding-left: 20%;
+    padding-right: 10%;
+    box-sizing: content-box;
+  }
+  .whats-next-header{
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 3%;
 
-    .whats-next-wrapper{
-      margin: 0 auto;
-      overflow: hidden;
-      padding: 10% 0;
-      padding-left: 20%;
-      padding-right: 10%;
-      box-sizing: content-box;
+    h2{
+      font-size: calc(10px + .3vw);
+      font-weight: lighter;
+      letter-spacing: .05vw;
     }
-    .whats-next-header{
-      display: block;
-      padding-bottom: 3%;
-      h2{
-        font-size: calc(10px + .3vw);
-        font-weight: lighter;
-        letter-spacing: .05vw;
-      }
-      
+    
 
-    }
-    .whats-next-content{
-      overflow: hidden;
-      cursor: pointer;
-    }
-    p.next-click{
-      display: block;
-      overflow: hidden;
-      font-size: calc(12px + 1vw);
-      font-weight: bolder;
-      color: rgb(255, 235, 235);
-      span{
-        color: white;
-      }
+  }
+  .whats-next-content{
+    overflow: hidden;
+    cursor: pointer;
+  }
+  p.next-click{
+    display: block;
+    overflow: hidden;
+    font-size: calc(12px + 1vw);
+    font-weight: bolder;
+    color: rgb(255, 235, 235);
+    .noo{
+      color: white;
     }
   }
-  @media only screen and (max-width: 800px){
-    margin: 10px;
-    text-align: center;
-    .whats-next-wrapper{
-      margin: 20px;
-      overflow: hidden;
-    }
-    .whats-next-header{
-      display: block;
-      
-    }
-    .whats-next-content{
-      overflow: hidden;
-    }
-    p.next-click{
-      display: block;
-      overflow: hidden;
-      padding: 30px;
-    }
+  .whats-next-wrapper{
+    overflow: hidden;
   }
+  .whats-next-header{
+    display: block;
+    
+  }
+  .whats-next-content{
+    overflow: hidden;
+  }
+  p.next-click{
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
 }
 
 .whats-prev{
-  @media only screen and (min-width: 800px){
+  @media only screen and (min-width: 100px){
     background-color: rgb(255, 203, 206);
   }
 }
@@ -931,24 +952,29 @@ li {
 //**************
 // TABLE SECTION
 
+
+
 .table{
   width: 100%;
-  background-color: rgb(255, 223, 228);
+  background-color: rgb(255, 244, 244);
   padding: 5% 0;
   p{
     text-align: center !important;
+  }
+  h2{
+    margin-bottom: 3%;
   }
 }
 
 .table-section{
   margin: 0 auto;
-  @media only screen and (min-width: 600px) {
     margin: 0;
     border: 1px solid rgb(255, 255, 255);
     margin: 0 auto;
     td{
       font-size: calc(12px + .3vw);
       border-bottom: 1px solid rgb(255, 255, 255);
+      background: rgb(240, 240, 240);
     }
     td:nth-child(2){
       background: rgb(255, 215, 222);
@@ -970,8 +996,13 @@ li {
     th:nth-child(3){
       background: #a5a5e5;
     }
-}
 
+}
+@media screen and (max-width: 600px){
+  .table-section{
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .table-section td, th{
@@ -1058,57 +1089,71 @@ form {
 }
 
 .ine{
-  @media only screen and (min-width: 600px){
-    margin-bottom: 100px;
-    .medium-header{
-      font-size: 14vw;
-      @media only screen and (min-width: 1400px){
-        font-size: 200px;
-      }
-      margin: 0;
-      padding:0;
-      padding-left: 200px;
-      margin-bottom: 100px;
-      width: 100%;
-      background-color: pink;
-    }
+  background: rgb(255, 241, 241);
+  .medium-header{
+    font-size: calc(14px + 1vw);
+    margin-top: 5%;
+    padding:0;
+    text-align: center;
+  }
+  overflow: hidden;
+  .platba{
+    display: block;
+    margin: 5% auto;
+    color: white;
+    // padding-left: 15%;
+    padding: 0;
+    width: 60%;
     overflow: hidden;
-    width: 100%;
-    .multiParagraph-section{
-      display: block;
-      padding: 0;
+  }
+  .platba-section{
+    text-align: left;
+    overflow: hidden;
+    background: rgb(165, 165, 229);
+    padding-left: 5%;
+    margin: 0 auto;
+    span{
+      font-weight: bold;
     }
-    .doubleContent-section{
-      text-align: left;
-      padding-left: 3%;
-      background: rgb(255, 197, 197);
-      span{
-        font-weight: bold;
-      }
-      #xdxd{
-        text-align: center !important;
-        display: inline-block;
-      }
-      font-size: 2vw;
-      @media only screen and (min-width: 1400px){
-        font-size: 30px;
-      }
+    font-size: calc(12px + .5vw);
+    p{
+      font-size: calc(12px + .6vw);
+      line-height: calc(12px + 1.5vw);
+      letter-spacing: .0vw;
+      padding-bottom: 3%;
+    }
 
-      width: 70%;
-      letter-spacing: -0.1vw;
-      ul{
-        
-        li{
-          display:block;
-          margin: 5%;
-          font-size: 1.5vw;
-        }
-      }
+    letter-spacing: -0.1vw;
+    .teext{
+      width: 60%;
+      float: left;
+      margin-top: 5%;
     }
-    .table-section{
-      margin-bottom: 0;
+    .square{
+      width: 25%;
+      height: 20%;
+      padding: 5% 5%;
+      text-align: right;
+      font-size: calc(12px + .5vw);
+      line-height: calc(12px + 1vw);
+      background: #ffffff;
+      float: right;
+      p{
+        padding-bottom: 10%;
+        color: rgb(165, 165, 229);
+      }
     }
   }
+  .table-section{
+    margin-bottom: 0;
+  }
+}
+
+.divider{
+  height: 1px;
+  width: 80%;
+  background: #a5a5e5;
+  margin: 0 auto;
 }
 
 /**************/
@@ -1120,6 +1165,20 @@ footer {
   background-color: rgba(240, 240, 240, 0.918);
   color: black;
 }
+@media screen and (max-width: 600px){
+  .fofo{
+    width: 70%;
+    margin: 0 auto;
+  }
+  footer {
+    text-align: left;
+    p{
+      line-height: 25px;
+      padding-bottom: 10px !important;
+    }
+  }
+}
+
 
 // .footer-map {
 //   width: 250px;
@@ -1300,3 +1359,15 @@ footer {
   position: relative;
   top: 20px;
 }
+
+@media only screen and (max-width: 600px){
+  .delid-ponukame-container{
+    float: none;
+    width: 90%;
+  }
+  .hiide{
+    display: none;
+  }
+}
+
+

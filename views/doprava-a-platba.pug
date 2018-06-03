@@ -4,30 +4,32 @@ block content
 	.ine
 		section.medium-header
 			h2 Platba
-		article.multiParagraph-section
-			//- section.small-header
-			//- 		h2 PC Na Mieru
-			section.doubleContent-section
-				p 
-				| Pre 
-				span PC Na Mieru 
-				| je platba možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. Možnosti platby za zostavy sú následovné:
-				ul
-					li Bankový prevod na účet firmy
-					li Vklad na účet firmy (možnosť aj osobného stretnutia)
-
-		article.multiParagraph-section
-			//- section.small-header
-			//- 		h2 Služby a servis
-			section.doubleContent-section
+		article.platba
+			section.platba-section
+				.teext
 					p 
-					| Na ostatne 
-					span Služby a servis
-					|  je možná len vopred, okrem prípadov kedy sa dá uplatniť dobierka, napr. Delid CPU. Možnosti platby za zostavy sú následovné:
-					ul
-						li Bankový prevod na účet firmy
-						li Vklad na účet firmy (možnosť aj osobného stretnutia)
-						li Dobierka
+						| Pre 
+						span PC Na Mieru 
+						| je platba možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. 
+					p Možnosti platby za zostavy sú následovné ->
+				.square
+					p Bankový prevod na účet firmy
+					p Vklad na účet firmy (možnosť aj osobného stretnutia)
+
+		.divider
+
+		article.platba
+			section.platba-section
+					.teext
+						p 
+							| Na ostatne 
+							span Služby a servis
+							|  je možná len vopred, okrem prípadov kedy sa dá uplatniť dobierka, napr. Delid CPU. 
+						p Možnosti platby za zostavy sú následovné ->
+					.square
+						p Bankový prevod na účet firmy
+						p Vklad na účet firmy (možnosť aj osobného stretnutia)
+						p Dobierka
 
 	.table
 		section.medium-header
@@ -54,3 +56,4 @@ block content
 				h2 Pozrite naspat:
 			.whats-next-content
 				p.next-click#click1 delid cpu
+	div(style="clear:both;")
