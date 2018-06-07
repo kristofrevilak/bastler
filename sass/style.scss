@@ -745,14 +745,15 @@ li {
   .why-us-section-header{
     font-size: calc(12px + 1vw);
     letter-spacing: .05vw;
-    margin-top: 5%;
+    margin-top: 15%;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
   }
   .num{
     position: relative;
-    font-size: 20px;
+    font-size: 40px;
     margin: 0;
+    margin-bottom: 10%;
     // left: 10%;
   }
   #first{
@@ -771,7 +772,7 @@ li {
     font-size: calc(12px + .5vw);
     line-height: 25px;
     margin: 0 auto;
-    padding: 5% 15%;
+    padding: 15%;
     overflow: hidden;
     box-sizing: content-box;
     span{
@@ -780,12 +781,13 @@ li {
     }
   }
   .fa-book, .fa-money-bill-alt, .fa-vials{
-    font-size: calc(16px + 2vw);
+    font-size: calc(80px + 2vw);
     position: relative;
     top: 10px;
     overflow: hidden;
     margin-bottom: 10%;
-    color: rgb(143, 143, 143);
+    margin-top: 15%;
+    color: rgb(135, 135, 199);
   };
 }
 
