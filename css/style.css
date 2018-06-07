@@ -113,7 +113,7 @@ html {
 nav {
   height: calc(40px + 2vw);
   /*background-color: rgb(223, 223, 223);*/
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #d8d8ff;
   text-transform: uppercase;
   color: #414141;
 }
