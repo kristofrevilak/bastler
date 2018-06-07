@@ -2,37 +2,44 @@ extends layout
 
 block content
   section.doubleContent-section(style='background-image:url()')
-    section.doubleContent-section-header
-      h1 Delid CPU
     article.doubleContent-section-clear
       article.doubleContent-section-divider
-        article.doubleContent-section-content.float
-          h3 Čo to je
-          .doubble
-            p Delid CPU je manuálne odstránenie (odkrytovanie) tzv. IHS ( Integrated Heat Spreader), ktorý odvádza teplo do samotného CPU chladiča. Priamo na čip nanesie pasta na báze tekutého kovu, ktoré majú najlepšie výsledky (prípadne inú pastu, ktorú si zákazník vyberie). Následne pomocou špeciálneho lepidla upevníme IHS na PCB (PCB (printed‑circuit board) → karta procesora).
-            .icon
-              <i class="fas fa-thermometer-empty"></i>
-        article.doubleContent-section-content
-          h3 Thermal Grizzly
-          .doubble
-            p Pre dosiahnutie čo najlepších výsledkov používame produkty firmy Thermal Grizzly. Pod IHS priamo na čip aplikujeme teplovodivú pastu na báze tekutého kovu Thermal Grizzly Conductonaut pre jej vysokú tepelnú vodivosť. Na IHS aplikujeme teplovodivú pastu Thermal Grizzly Kryonaut.
-            .icon
-              <i class="fas fa-clipboard-check"></i>
 
-  section.media-section
-    article.media-section-content
-      video(width="320" height="240" controls)
-        source(src="delid.mp4" type="video/mp4")
+        .video
+          img(src="video.jpg", alt="")
+        .other
 
-  section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
-    section(class="side-section-content")
-      section(class="side-section-float")
-        header(class="side-section-header")
-          h1 Požiadavka zákazníka a návrh zostavy
-        section(class="side-section-content-text")
-          span(class="side-section-desc") Vaše požiadavky radi prediskutujeme telefonicky, prostredníctvom e-mailu či Facebooku. Taktiež osobne v našej kancelárii alebo po dohode kdekoľvek v okrese Senec a Bratislava. Po vytvorení návrhu zostavy Vám ho predložíme na schválenie.
-      section(class="side-section-img")
-        img(src="https://static.pexels.com/photos/7075/people-office-group-team.jpg" class="normal" alt="section-photo")
+          .doubleContent-section-header
+            h2 Delid CPU
+
+          article.doubleContent-section-content.float
+            h3 Čo to znamená?
+            .doubble
+              p Delid CPU je manuálne odstránenie (odkrytovanie) tzv. IHS ( Integrated Heat Spreader), ktorý odvádza teplo do samotného CPU chladiča. Priamo na čip nanesie pasta na báze tekutého kovu, ktoré majú najlepšie výsledky (prípadne inú pastu, ktorú si zákazník vyberie). Následne pomocou špeciálneho lepidla upevníme IHS na PCB (PCB (printed‑circuit board) → karta procesora).
+              //- .icon
+              //-   <i class="fas fa-thermometer-empty"></i>
+          article.doubleContent-section-content
+            h3 O Thermal Grizzly
+            .doubble
+              p Pre dosiahnutie čo najlepších výsledkov používame produkty firmy Thermal Grizzly. Pod IHS priamo na čip aplikujeme teplovodivú pastu na báze tekutého kovu Thermal Grizzly Conductonaut pre jej vysokú tepelnú vodivosť. Na IHS aplikujeme teplovodivú pastu Thermal Grizzly Kryonaut.
+              //- .icon
+              //-   <i class="fas fa-clipboard-check"></i>
+          
+
+  //- section.media-section
+  //-   article.media-section-content
+  //-     video(width="320" height="240" controls)
+  //-       source(src="delid.mp4" type="video/mp4")
+
+  //- section(class="side-section" style="background-image:url('');background-position: center;background-size: cover;background-attachment: scroll;")
+  //-   section(class="side-section-content")
+  //-     section(class="side-section-float")
+  //-       header(class="side-section-header")
+  //-         h1 Požiadavka zákazníka a návrh zostavy
+  //-       section(class="side-section-content-text")
+  //-         span(class="side-section-desc") Vaše požiadavky radi prediskutujeme telefonicky, prostredníctvom e-mailu či Facebooku. Taktiež osobne v našej kancelárii alebo po dohode kdekoľvek v okrese Senec a Bratislava. Po vytvorení návrhu zostavy Vám ho predložíme na schválenie.
+  //-     section(class="side-section-img")
+  //-       img(src="https://static.pexels.com/photos/7075/people-office-group-team.jpg" class="normal" alt="section-photo")
  
   .table
     section.medium-header
@@ -66,11 +73,13 @@ block content
   article.delid-ponukame
     article.delid-ponukame-container
       section.delid-ponukame-header
-        h2 Delid ponúkame pre procesory so socketom
+        h2 Delidom podporované sockety
       section.delid-ponukame-text
         p 1150 (Intel) - celý zoznam podporovaných procesorov (Haswell).
         p 1155 (Intel) - celý zoznam podporovaných procesorov (Sandy Bridge a Ivy Bridge).
         p 1151 (Intel) - celý zoznam podporovaných procesorov (Skylake, Kaby Lake a Coffee Lake).
+        .img
+          img(src="cpu.jpg", alt="")
     article.delid-ponukame-container 
       section.delid-ponukame-header
         h2 Upozornenie
@@ -81,6 +90,7 @@ block content
         .jedno
           p Úkonom odstránenia IHS sa stráca záruka na CPU tzn. nie je možné ho reklamovať . Každé CPU, ktorému sa odstráni IHS je testované na funkčnosť..
           p V prípade, že CPU poškodíme a znefunkčníme, zákazníkovi dodávame nové.
+        
 
   section.whats-next
     .whats-next-wrapper
@@ -89,7 +99,7 @@ block content
       .whats-next-content
         p.next-click#click1 
           span#content1.noo Doprava a Platba
-          span.hiide / Predstavíme Vám možnosti dopravy a platby. Doprava pre Senec a okolie je zadarmo.
+          span.hiide  / Predstavíme Vám možnosti dopravy a platby. Doprava pre Senec a okolie je zadarmo.
   section.whats-prev
     .whats-next-wrapper
       .whats-next-header
@@ -97,5 +107,5 @@ block content
       .whats-next-content
         p.next-click#click2 
           span#content1.noo PC Na Mieru
-          span.hiide / Predstavíme Vám proces poskladania vášho vysnívaného PC v jednoduchých troch krokoch.
+          span.hiide  / Predstavíme Vám proces poskladania vášho vysnívaného PC v jednoduchých troch krokoch.
   div(style="clear:both;")
