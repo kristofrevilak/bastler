@@ -327,7 +327,6 @@ li {
 
 
 .side-section-header  {
-  text-align: center;
   @media only screen and (min-width: 600px) {
     font-size: 30px;
     padding-top: 100px;
@@ -340,7 +339,6 @@ li {
   background-position: bottom;
   background-size: cover;
   background-attachment: scroll;
-  text-align: center;
 }
 
 // .side-section-content-text{
@@ -371,43 +369,14 @@ li {
     }
   }
 }
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 600px){
   .side-section{
     background-image: none !important;
     padding: 0;
     background-image: none;
     overflow: hidden;
-    letter-spacing: 0.5px;
-    text-align: center;
-    display: flex !important;
-  }
-  .side-section-float{
-    width: 100%;
-    box-sizing: border-box;
-    @media only screen and (max-width: 800px) {
-      font-size: 2vw !important;
-      margin: 0 8%;
-      margin-top: 2%;
-    }
-    @media only screen and (min-width: 1000px) {
-      font-size: 1.4vw !important;
-      margin: 0 8%;
-      // margin-top: 4%;
-    }
-    @media only screen and (min-width: 1400px) {
-      font-size: 22px !important;
-      // margin-top: 7%;
-    }
-    font-size: 1.8vw;
-    margin: 0 8%;
-    // margin-top: 4%;
-    height: 10vh !important;
-  }
-  .side-section-content{
-    padding: 0;
-    margin-top: 0;
-    overflow: hidden;
-    float: right;
+    margin-top: 5%;
+    margin-left: 10%;
   }
   .side-section-img{
     margin-left: 0;
@@ -443,28 +412,10 @@ li {
     }
   }
   .side-section-header{
-    @media only screen and (max-width: 800px) {
-      font-size: 3vw !important;
-    }
-    @media only screen and (min-width: 1200px) {
-      font-size: 2vw !important;
-    }
-    font-size: 2vw;
-    font-size: 30px;
+    font-size: calc(12px + 1vw);
     padding-top: 0;
     margin-bottom: 30px;
-    letter-spacing: 4px !important;
-    margin: 0 auto !important;
-    text-align: center;
-  }
-
-  .side-section-desc{
-    text-align: center;
-    margin: 0 auto; 
-  }
-
-  .left {
-    float: left !important;
+    margin: 0 auto;
   }
 }
 
@@ -567,7 +518,7 @@ li {
   .doubble{
     p{
       // width: 80%;
-      float: right;
+      // float: right;
       display: block;
       color: black;
       @media only screen and (max-width:600px){
@@ -1010,29 +961,32 @@ li {
 
 
 .media-section{
-  background-image: none;
+  // background-image: none;
+  // background: url("https://images.pexels.com/photos/88476/pexels-photo-88476.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
   overflow: none !important;
   @media only screen and (min-width: 600px) {
     margin: 0;
-    background-color: rgb(231, 231, 231);
   }
 }
 
 
 .media-section-content{
-  @media only screen and (min-width: 600px) {
-    .media{ 
-      display: block;
-      overflow: hidden;
-      width: 50%;
-      video{
-        width: 100%;
-      }
-    }
+  video{
+    opacity: 0;
+    display: none;
+  }
+  img{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10%;
   }
   @media only screen and (max-width: 600px) {
     overflow: hidden;
     video{
+      width: 100%;
+    }
+    img{
       width: 100%;
     }
   }
@@ -1469,6 +1423,10 @@ footer {
   .img img{
     width: 400px;
     position: absolute;
+    @media screen and (max-width: 600px){
+      width: 70%;
+    }
+    
   }
 }
 .delid-ponukame-header{

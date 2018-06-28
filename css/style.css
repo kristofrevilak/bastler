@@ -318,10 +318,6 @@ li {
   position: relative;
 }
 
-.side-section-header {
-  text-align: center;
-}
-
 @media only screen and (min-width: 600px) {
   .side-section-header {
     font-size: 30px;
@@ -335,7 +331,6 @@ li {
   background-position: bottom;
   background-size: cover;
   background-attachment: scroll;
-  text-align: center;
 }
 
 .side-section-desc {
@@ -362,55 +357,14 @@ li {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .side-section {
     background-image: none !important;
     padding: 0;
     background-image: none;
     overflow: hidden;
-    letter-spacing: 0.5px;
-    text-align: center;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-  .side-section-float {
-    width: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-size: 1.8vw;
-    margin: 0 8%;
-    height: 10vh !important;
-  }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 800px) {
-  .side-section-float {
-    font-size: 2vw !important;
-    margin: 0 8%;
-    margin-top: 2%;
-  }
-}
-
-@media only screen and (min-width: 800px) and (min-width: 1000px) {
-  .side-section-float {
-    font-size: 1.4vw !important;
-    margin: 0 8%;
-  }
-}
-
-@media only screen and (min-width: 800px) and (min-width: 1400px) {
-  .side-section-float {
-    font-size: 22px !important;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .side-section-content {
-    padding: 0;
-    margin-top: 0;
-    overflow: hidden;
-    float: right;
+    margin-top: 5%;
+    margin-left: 10%;
   }
   .side-section-img {
     margin-left: 0;
@@ -435,51 +389,26 @@ li {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   .side-section-img img {
     width: 60%;
     height: 50%;
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
   .side-section-img img {
     width: 50%;
     height: 50%;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
   .side-section-header {
-    font-size: 2vw;
-    font-size: 30px;
+    font-size: calc(12px + 1vw);
     padding-top: 0;
     margin-bottom: 30px;
-    letter-spacing: 4px !important;
-    margin: 0 auto !important;
-    text-align: center;
-  }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 800px) {
-  .side-section-header {
-    font-size: 3vw !important;
-  }
-}
-
-@media only screen and (min-width: 800px) and (min-width: 1200px) {
-  .side-section-header {
-    font-size: 2vw !important;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .side-section-desc {
-    text-align: center;
     margin: 0 auto;
-  }
-  .left {
-    float: left !important;
   }
 }
 
@@ -579,7 +508,6 @@ li {
 }
 
 .doubleContent-section-content .doubble p {
-  float: right;
   display: block;
   color: black;
 }
@@ -1044,26 +972,25 @@ li {
 }
 
 .media-section {
-  background-image: none;
   overflow: none !important;
 }
 
 @media only screen and (min-width: 600px) {
   .media-section {
     margin: 0;
-    background-color: #e7e7e7;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .media-section-content .media {
-    display: block;
-    overflow: hidden;
-    width: 50%;
-  }
-  .media-section-content .media video {
-    width: 100%;
-  }
+.media-section-content video {
+  opacity: 0;
+  display: none;
+}
+
+.media-section-content img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1071,6 +998,9 @@ li {
     overflow: hidden;
   }
   .media-section-content video {
+    width: 100%;
+  }
+  .media-section-content img {
     width: 100%;
   }
 }
@@ -1512,6 +1442,12 @@ footer {
 .delid-ponukame-text .img img {
   width: 400px;
   position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .delid-ponukame-text .img img {
+    width: 70%;
+  }
 }
 
 .delid-ponukame-header {
