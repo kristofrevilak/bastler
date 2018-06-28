@@ -126,8 +126,8 @@ nav {
   /*background-color: rgb(223, 223, 223);*/
   border-bottom: 3px solid rgb(216, 216, 255);
   @media only screen and (max-width:600px){
-    border-bottom: 1px solid rgb(0, 0, 255);
-    background: rgb(244, 244, 255);
+    border-bottom: 1px solid rgb(216, 216, 255);
+    // background: rgb(244, 244, 255);
   }
   text-transform: uppercase;
   color: #414141;
@@ -183,10 +183,10 @@ li {
   float: left;
  
   list-style-type: none;
-  padding: calc(14px + 1vw);
-  padding-top: calc(14px + 1vw);
-  padding-bottom: calc(14px + 1vw);
-  padding-right: calc(12px + 1vw);
+  padding: calc(11px + 1vw);
+  padding-top: calc(13px + 1vw);
+  padding-bottom: calc(9px + 1vw);
+  padding-right: calc(11px + 1vw);
   cursor: pointer;
   font-size: calc(12px + .1vw);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -222,14 +222,10 @@ li {
   font-size: 15px;
   transition: all ease-in-out 0.5s;
   cursor: default;
-  border-bottom: 1px solid transparent;
   color: black;
   display: block;
   @media only screen and (min-width: 600px) {
     display: none !important;
-  }
-  &:hover {
-    border-color: black;
   }
 }
 
@@ -359,6 +355,19 @@ li {
     img{
       width: 100%;
       margin-top: 50px; 
+    }
+  }
+  .side-section-content{
+    padding: 15% 10%;
+    text-align: left;
+    .side-section-content-text{
+      font-size: calc(12px + .5vw);
+      line-height: calc(20px + 1vw);
+    }
+    .side-section-header{
+      text-align: left;
+      margin-bottom: 5%;
+      font-size: calc(16px + 1vw);
     }
   }
 }
@@ -608,6 +617,9 @@ li {
   h1, span{
     display: block;
     margin: 20px;
+    @media only screen and (max-width: 600px){
+      margin-left: 10%;
+    }
   }
   h1{
     font-size: calc(16px + 1vw);
@@ -766,7 +778,7 @@ li {
     background: rgb(195, 195, 195);
   }
   .why-us-section-reason{
-    width: 65%;
+    width: auto;
     display: block;
     text-align: left;
     font-size: calc(12px + .5vw);
@@ -1426,7 +1438,6 @@ footer {
 .highlight {
   // background-color: rgba(0, 0, 0, 0.2);
   display: table !important;
-  text-align: center;
   margin: 0 auto;
   color: rgb(255, 255, 255);
 }
