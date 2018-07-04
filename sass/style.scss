@@ -341,14 +341,17 @@ li {
   background-attachment: scroll;
 }
 
-// .side-section-content-text{
-//   margin-bottom: 50px;
-// }
+.side-section-content-text{
+  @media only screen and (min-width: 600px){
+    line-height: 1.5;
+    width: 40%;
+  }
+}
 
 .side-section-desc {
   margin-bottom: 100px;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
   .side-section-img{
     img{
       width: 100%;
@@ -366,6 +369,7 @@ li {
       text-align: left;
       margin-bottom: 5%;
       font-size: calc(16px + 1vw);
+      
     }
   }
 }
@@ -415,7 +419,7 @@ li {
     font-size: calc(12px + 1vw);
     padding-top: 0;
     margin-bottom: 30px;
-    margin: 0 auto;
+    width: 50%;
   }
 }
 
