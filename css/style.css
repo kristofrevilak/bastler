@@ -172,7 +172,7 @@ li {
   list-style-type: none;
   padding: calc(11px + 1vw);
   padding-top: calc(13px + 1vw);
-  padding-bottom: calc(9px + 1vw);
+  padding-bottom: calc(12px + 1vw);
   padding-right: calc(11px + 1vw);
   cursor: pointer;
   font-size: calc(12px + .1vw);
@@ -280,6 +280,13 @@ li {
 /********************/
 /*  _MAIN SECTION_  */
 /********************/
+.main-section-img {
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: -10%;
+}
+
 .main-section {
   background-repeat: no-repeat;
   background-position: center;
@@ -687,6 +694,7 @@ li {
     margin-top: 10%;
     margin-bottom: 10%;
     overflow: hidden;
+    line-height: 1.5;
   }
   .fa-book, .fa-money-bill-alt, .fa-vials {
     font-size: calc(16px + 2vw);
@@ -827,6 +835,7 @@ li {
   position: relative;
   right: 0px;
   top: 14vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1204,7 +1213,7 @@ form {
 .ine .platba-section {
   text-align: left;
   overflow: hidden;
-  background: #a5a5e5;
+  background: #7676a1;
   padding-left: 5%;
   margin: 0 auto;
   font-size: calc(12px + .5vw);
@@ -1241,7 +1250,7 @@ form {
 
 .ine .platba-section .square p {
   padding-bottom: 10%;
-  color: #a5a5e5;
+  color: #7676a1;
 }
 
 .ine .table-section {

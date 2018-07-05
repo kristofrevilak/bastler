@@ -185,7 +185,7 @@ li {
   list-style-type: none;
   padding: calc(11px + 1vw);
   padding-top: calc(13px + 1vw);
-  padding-bottom: calc(9px + 1vw);
+  padding-bottom: calc(12px + 1vw);
   padding-right: calc(11px + 1vw);
   cursor: pointer;
   font-size: calc(12px + .1vw);
@@ -287,6 +287,13 @@ li {
 /********************/
 /*  _MAIN SECTION_  */
 /********************/
+
+.main-section-img{
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: -10%;
+}
 
 // main section only for background props
 .main-section{
@@ -687,6 +694,7 @@ li {
       margin-top: 10%;
       margin-bottom: 10%;
       overflow: hidden;
+      line-height: 1.5;
     }
   }
   .fa-book, .fa-money-bill-alt, .fa-vials{
@@ -813,6 +821,7 @@ li {
     position: relative;
     right: 0px;
     top: 14vh;
+    width: 100%;
   }
   @media only screen and (max-width:600px){
     float: none;
@@ -1174,7 +1183,7 @@ form {
   .platba-section{
     text-align: left;
     overflow: hidden;
-    background: rgb(165, 165, 229);
+    background: rgb(118, 118, 161);
     padding-left: 5%;
     margin: 0 auto;
     span{
@@ -1205,7 +1214,7 @@ form {
       float: right;
       p{
         padding-bottom: 10%;
-        color: rgb(165, 165, 229);
+        color: rgb(118, 118, 161);
       }
     }
   }

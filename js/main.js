@@ -1,3 +1,5 @@
+let controller = new ScrollMagic.Controller();
+
 $(function(){
   $("#menu").click( function(){
     $("body").css("overflow", "hidden");
@@ -46,6 +48,7 @@ $(function(){
   $(document).ready((e)=>{
     TweenMax.to("html", 1, {opacity:1, ease: Circ.easeIn});
   });
+  
 
 });
 
