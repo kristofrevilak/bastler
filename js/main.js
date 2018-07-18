@@ -47,6 +47,7 @@ $(function(){
 
   $(document).ready((e)=>{
     TweenMax.to("html", 1, {opacity:1, ease: Circ.easeIn});
+    TweenMax.to("html", 1, {opacity:1, ease: Circ.easeIn});
   });
   
 

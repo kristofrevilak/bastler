@@ -302,11 +302,11 @@ li {
   background-size: cover;
   background-attachment: scroll;
   color: black;
-  background-color: rgb(240, 181, 181);
+  text-shadow: 1px 1px rgb(104, 104, 104);
+  background-image: url("green.jpg");
   @media only screen and (min-width: 900px) {
     padding: 6% 10%;
     font-size: 18px;
-    background-image: none;
   }
   @media only screen and (min-width: 600px) and (max-width: 900px) {
     padding: 6%;
@@ -320,7 +320,7 @@ li {
 }
 
 .side-section{
-  background-image: url("https://static.pexels.com/photos/776656/pexels-photo-776656.jpeg");
+  //background-image: url("https://static.pexels.com/photos/776656/pexels-photo-776656.jpeg");
   // background-color: #DFDFDF;
   background-repeat: no-repeat;
   background-position: center;
@@ -351,12 +351,13 @@ li {
 .side-section-content-text{
   @media only screen and (min-width: 600px){
     line-height: 1.5;
-    width: 40%;
+    width: 100%;
   }
 }
 
 .side-section-desc {
   margin-bottom: 100px;
+  font-size: calc(8px + .5vw);
 }
 @media only screen and (max-width: 600px){
   .side-section-img{
@@ -381,52 +382,55 @@ li {
   }
 }
 @media only screen and (min-width: 600px){
-  .side-section{
-    background-image: none !important;
-    padding: 0;
-    background-image: none;
+  .ovr{
+    width: 100%;
+    margin: 0 10%;
+    box-sizing: content-box;
     overflow: hidden;
-    margin-top: 5%;
-    margin-left: 10%;
+  }
+  .side-section{
+    background: none !important;
+    padding: 0;
+    padding-top: 5%;
+    overflow: hidden;
+    box-sizing: content-box;
+    float: left;
+    width: 30%;
+  }
+  /*.chips{
+    background-image: url("chips.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  */
+  .side-section-float{
+    width: 100%;
   }
   .side-section-img{
     margin-left: 0;
     padding-top: 0;
     box-sizing: border-box;
-    width: 100%;
-    float: none;
-    clear: both;
-    position: relative;
+    width: 40%;
+    padding-top: 5%;
+    overflow: hidden;
     
     img{
       box-sizing: border-box;
-      height: 30vw;
-      position: relative;
-      right: -50%;
-      margin-top: -20%;
+      width: calc(400px + 5vw);
+      position: absolute;
       display: block;
-      float: none;
-      clear: both;
-
-    }
-    @media only screen and (max-width: 800px) {
-      img{
-        width: 60%;
-        height: 50%;
-      }
-    }
-    @media only screen and (max-width: 1200px) {
-      img{
-        width: 50%;
-        height: 50%;
-      }
+      margin: 5%;
+      right: 10%;
+      left: 53%;
     }
   }
   .side-section-header{
     font-size: calc(12px + 1vw);
     padding-top: 0;
     margin-bottom: 30px;
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -451,6 +455,7 @@ li {
   text-align: center;
   margin: 5% auto;
   width: 90%;
+  margin-top: 10%;
 }
 
 .review-section-wrapper{
@@ -598,7 +603,7 @@ li {
   font-size: 30px;
   text-align: center;
   @media only screen and (min-width: 600px) {
-    font-size: 45px;
+    font-size: calc(9px + 1vw);
     padding-top: 100px;
     margin-bottom: 60px;
   }
