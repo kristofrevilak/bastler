@@ -20,6 +20,22 @@ $(function(){
   }, function() {
     $(".logo").prop({src: "logo.png"});
   });
+  $("#pc").click((e)=>{
+    if(!$("#pc").hasClass("active")){
+      $("#pc").addClass("active");
+      $("#sas").removeClass("active");
+      $(".change-info").html("Pre PC Na Mieru je platba možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. ")
+      $(".change-li3").css("opacity",0);
+    };
+  });
+  $("#sas").click((e)=>{
+    if(!$("#sas").hasClass("active")){
+      $("#sas").addClass("active");
+      $("#pc").removeClass("active");
+      $(".change-info").html("Na ostatne Služby a servis je možná len vopred, okrem prípadov kedy sa dá uplatniť dobierka, napr. Delid CPU.")
+      $(".change-li3").css("opacity",1);
+    };
+  });
   // $(".see-more").click(function() {
   //   $('html, body').animate({
   //     scrollTop: $("#see-more").offset().top

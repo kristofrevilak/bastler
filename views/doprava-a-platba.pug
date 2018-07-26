@@ -8,42 +8,29 @@ block content
 			section(class="main-section-content-text")
 				span(class="main-section-desc highlight") Pri objednávke nad 2000€ je doprava zdarma.
 	.ine
-		section.medium-header
-			h2 Platba
 		article.platba
 			section.platba-section
-				.teext
-					p 
-						| Pre 
-						span PC Na Mieru 
-						| je platba možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. 
-					p Možnosti platby za zostavy sú následovné ->
-				.square
-					p Bankový prevod na účet firmy
-					p Vklad na účet firmy (možnosť aj osobného stretnutia)
+				.platba-box
+					.medium-header
+						h2 Platba
+						.choice
+							h3#pc.active PC Na Mieru 
+							h3#sas Služby a servis
+				.platba-box
+					p.change-info Pre PC Na Mieru je platba možná len vopred, nakoľko sa jedná o jedinečné zostavy na mieru, ktoré by inak boli nepredajné. 
+					p Možnosti platby za zostavy sú následovné
+					.options
+						ul
+							li.change-li1 Bankový prevod na účet firmy
+							li.change-li2 Vklad na účet firmy (možnosť aj osobného stretnutia)
+							li.change-li3 Dobierka
 
 		.divider
-
-		article.platba
-			section.platba-section
-					.teext
-						p 
-							| Na ostatne 
-							span Služby a servis
-							|  je možná len vopred, okrem prípadov kedy sa dá uplatniť dobierka, napr. Delid CPU. 
-						p Možnosti platby za zostavy sú následovné ->
-					.square
-						p Bankový prevod na účet firmy
-						p Vklad na účet firmy (možnosť aj osobného stretnutia)
-						p Dobierka
 
 	.table
 		section.medium-header
 			h2 Doprava
 		table.table-section
-			tr
-				th Spôsob dopravy:
-				th Cena:
 			tr
 				td Osobný odber v sídle firmy
 				td.right Zdarma
