@@ -197,11 +197,11 @@ nav li {
   letter-spacing: .05vw;
 }
 
-.nav-item:hover {
-  background: #b8b8e6;
+.nav-item.sand:hover {
+  background: #fff7ea;
 }
 
-.nav-item:hover a {
+.nav-item.sand:hover a {
   color: white;
 }
 
@@ -294,6 +294,8 @@ nav li {
   background-attachment: scroll;
   color: black;
   text-shadow: 1px 1px #686868;
+  -webkit-box-shadow: 10px 20px 20px #cfcfcf;
+          box-shadow: 10px 20px 20px #cfcfcf;
   background-image: url("green.jpg");
   /*text-shadow: 1px 1px grey;*/
   /*background: -webkit-linear-gradient(left top, #DFDFDF, #F1E5E5);
@@ -347,7 +349,6 @@ nav li {
 @media only screen and (max-width: 600px) {
   .side-section-img img {
     width: 100%;
-    margin-top: 50px;
   }
   .side-section-content {
     padding: 15% 10%;
@@ -367,20 +368,59 @@ nav li {
 @media only screen and (min-width: 600px) {
   .ovr {
     width: 100%;
-    margin: 0 10%;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     overflow: hidden;
   }
   .side-section {
     background: none !important;
     padding: 0;
     padding-top: 5%;
+    padding-left: 10%;
     overflow: hidden;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     float: left;
-    width: 30%;
+    overflow: hidden;
+    width: 40%;
+  }
+  .side-section.side-pc {
+    width: 80%;
+    border-top: 1px solid #ebebeb;
+    overflow: hidden;
+  }
+  .side-section.side-pc .side-section-content {
+    width: auto;
+    margin: 0 auto !important;
+  }
+  .side-section.side-pc .side-section-header {
+    margin-top: 5vw;
+  }
+  .side-section.side-pc .side-section-float {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 10%;
+  }
+  .side-section.side-pc .side-section-float .side-section-block {
+    width: 50%;
+    overflow: hidden;
+    float: right;
+  }
+  .side-section.side-pc .side-section-float .side-section-img {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    width: auto !important;
+    height: calc(500px + 5vw) !important;
+    margin-left: 10%;
+  }
+  .side-section.side-pc .side-section-float .side-section-img img {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(200px + 5vw) !important;
+    -webkit-box-shadow: 10px 20px 30px silver;
+            box-shadow: 10px 20px 30px silver;
   }
   .chips {
     background-image: url("chips.jpg") !important;
@@ -388,9 +428,10 @@ nav li {
   .side-section-float {
     width: 100%;
   }
+  .side-section-float.side-pc {
+    margin: 10% 0;
+  }
   .side-section-img {
-    margin-left: 20%;
-    padding-top: 80px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 40%;
@@ -400,8 +441,6 @@ nav li {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: calc(300px + 5vw);
-    position: absolute;
-    right: 10%;
   }
   .yes {
     margin-left: 0;
@@ -461,6 +500,10 @@ nav li {
 .review-section {
   margin: 0 auto;
   width: 90%;
+}
+
+.review-section .medium-header {
+  margin-top: 5%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -981,7 +1024,7 @@ nav li {
 }
 
 .media-section {
-  overflow: none !important;
+  overflow: none;
 }
 
 @media only screen and (min-width: 600px) {
@@ -992,6 +1035,7 @@ nav li {
 
 .media-section-content {
   width: 50%;
+  background: #fff7ea;
   float: left;
 }
 
@@ -1019,8 +1063,9 @@ nav li {
 }
 
 .media-section-text {
-  margin: 6% 10%;
+  padding: 6% 10%;
   width: 30%;
+  background: #fff7ea;
   float: left;
 }
 

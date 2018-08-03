@@ -206,8 +206,8 @@ nav li {
     overflow: hidden;
     letter-spacing: .05vw;
   }
-  &:hover{
-    background: rgb(184, 184, 230);
+  &.sand:hover{
+    background: #fff7ea;
     a{
       color: white;
     }
@@ -303,6 +303,7 @@ nav li {
   background-attachment: scroll;
   color: black;
   text-shadow: 1px 1px rgb(104, 104, 104);
+  box-shadow: 10px 20px 20px rgb(207, 207, 207);
   background-image: url("green.jpg");
   @media only screen and (min-width: 900px) {
     padding: 6% 10%;
@@ -354,7 +355,6 @@ nav li {
   .side-section-img{
     img{
       width: 100%;
-      margin-top: 50px; 
     }
   }
   .side-section-content{
@@ -375,28 +375,65 @@ nav li {
 @media only screen and (min-width: 600px){
   .ovr{
     width: 100%;
-    margin: 0 10%;
-    box-sizing: content-box;
+    box-sizing: border-box;
     overflow: hidden;
   }
   .side-section{
     background: none !important;
     padding: 0;
     padding-top: 5%;
+    padding-left: 10%;
     overflow: hidden;
-    box-sizing: content-box;
+    box-sizing: border-box;
     float: left;
-    width: 30%;
+    overflow: hidden;
+    width: 40%;
+    &.side-pc{
+      width: 80%;
+      border-top: 1px solid rgb(235, 235, 235);
+      overflow: hidden;
+      .side-section-content{
+        width: auto;
+        margin: 0 auto !important;
+      }
+      .side-section-header{
+        margin-top: 5vw;
+      }
+      .side-section-float{
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 10%;
+        .side-section-block{
+          width: 50%;
+          overflow: hidden;
+          float: right;
+        }
+        .side-section-img{
+          box-sizing: border-box;
+          overflow: hidden;
+          width: auto !important;
+          height: calc(500px + 5vw) !important;
+          margin-left: 10%;
+          img{
+            box-sizing: border-box;
+            width: calc(200px + 5vw) !important;
+            box-shadow: 10px 20px 30px rgb(192, 192, 192);
+          }
+        }
+      }
+    }
   }
   .chips{
     background-image: url("chips.jpg") !important;
   }
   .side-section-float{
     width: 100%;
+    &.side-pc{
+      margin: 10% 0;
+    }
   }
   .side-section-img{
-    margin-left: 20%;
-    padding-top: 80px;
     box-sizing: border-box;
     width: 40%;
     overflow: hidden;
@@ -404,8 +441,6 @@ nav li {
     img{
       box-sizing: border-box;
       width: calc(300px + 5vw);
-      position: absolute;
-      right: 10%;
     }
   }
   .yes{
@@ -461,6 +496,9 @@ nav li {
 .review-section{
   margin: 0 auto;
   width: 90%;
+  .medium-header{
+    margin-top: 5%;
+  }
 }
 
 .review-section-wrapper{
@@ -959,7 +997,8 @@ nav li {
 .media-section{
   // background-image: none;
   // background: url("https://images.pexels.com/photos/88476/pexels-photo-88476.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  overflow: none !important;
+  overflow: none;
+  
   @media only screen and (min-width: 600px) {
     margin: 0;
   }
@@ -968,6 +1007,7 @@ nav li {
 
 .media-section-content{
   width: 50%;
+  background: #fff7ea;
   float: left;
   video{
     opacity: 0;
@@ -989,8 +1029,9 @@ nav li {
   }
 }
 .media-section-text{
-  margin: 6% 10%;
+  padding: 6% 10%;
   width: 30%;
+  background: #fff7ea;
   float: left;
   
   h2{
